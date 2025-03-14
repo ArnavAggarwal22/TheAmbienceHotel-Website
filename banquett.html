@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="assets/hotellogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    
+    <title>Banquet - The Ambience Hotel</title>
+<style>
+    .banquet-header {
+  background-image: linear-gradient(
+      rgba(15, 26, 44, 0.5),
+      rgba(15, 26, 44, 0.5)
+    ),
+    url("assets/hotelphototwo.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banquet {
+  padding: 5rem 1rem;
+}
+
+.banquet__container {
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+.banquet__content {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.banquet__gallery {
+  position: relative;
+}
+
+.banquet__image__container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.banquet__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.banquet__nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.btn__nav {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn__nav:hover {
+  background-color: rgba(243, 238, 238, 0.9);
+}
+
+.banquet__details {
+  background-color: var(--extra-light);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.banquet__details h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.banquet__details p {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.banquet__details ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.banquet__details li {
+  color: var(--text-light);
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.banquet__details li::before {
+  content: '•';
+  color: var(--secondary-color);
+  position: absolute;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .banquet__content {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .banquet__image__container {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .banquet__image__container {
+    height: 600px;
+  }
+}
+
+
+/* Base Navigation Styles */
+/* Navbar Base Styles */
+.nav__bar {
+    background-color: rgb(250, 247, 247);
+    border-radius: 5px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto; /* Change from 20px auto to 0 auto */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure it remains positioned properly */
+    z-index: 1000; /* Keeps it above other content */
+}
+
+        .nav__logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .hotel-logo {
+            width: 60px;
+            height: auto;
+            border-radius: 5px;
+        }
+        .hotel-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2C3E50;
+            font-family: "Poppins", sans-serif;
+        }
+        .nav__links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+        .nav__links a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #34495E;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav__links a:hover {
+            color: #f6ac0f;
+        }
+
+
+
+
+
+
+</style>
+
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <div class="nav__header">
+          <div class="logo nav__logo">
+            <a href="index.html#home">
+            <img src="assets/hotellogo.png" alt="Hotel Logo" class="hotel-logo">
+          </a>
+            <span class="hotel-name">THE AMBIENCE HOTEL</span>
+          </div>
+          <button class="nav__menu__btn" id="menu-btn" aria-label="Toggle Menu">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+        <ul class="nav__links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#room">Room</a></li>
+            <li><a href="index.html#feature">Features</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="index.html#news">Reviews</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header banquet-header" id="home">
+      <div class="section__container header__container">
+        <h1>Luxury Banquet<br />For Your Special Events</h1>
+        <a href="https://wa.me/8288077631"><button class="btn">Book Now <i class="ri-whatsapp-fill"></i></button></a>
+        <a href="tel:+918288077631"><button class="btn">Call <i class="ri-phone-fill"></i></button></a>
+      </div>
+    </header>
+
+    <main class="banquet section__container">
+      <div class="banquet__container">
+        <h2 class="section__header">Our Banquet Hall</h2>
+        <div class="banquet__content">
+          <div class="banquet__gallery">
+            <div class="banquet__image__container">
+              <img src="assets/banqnine.jpg" alt="Banquet Hall" class="banquet__image" id="banquetImage">
+              <div class="banquet__nav">
+                <button class="btn__nav btn__nav--left" onclick="changeImage(-1)">
+                  <i class="ri-arrow-left-s-line"></i>
+                </button>
+                <button class="btn__nav btn__nav--right" onclick="changeImage(1)">
+                  <i class="ri-arrow-right-s-line"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="banquet__details">
+            <h3>Elegant Celebrations</h3>
+            <p>Our spacious banquet hall is perfect for weddings, corporate events, and special occasions. With state-of-the-art amenities and exquisite decor, we ensure your event is unforgettable.</p>
+            <ul>
+              <li>Capacity: Up to 300 guests</li>
+              <li>Customizable lighting and sound systems</li>
+              <li>Dedicated event planning team</li>
+              <li>Gourmet catering options</li>
+              <li>Ample parking space</li>
+            </ul>
+            <a href="https://wa.me/8288077631"><button class="btn">Book Now <i class="ri-whatsapp-fill"></i></button></a>
+            <a href="tel:+918288077631"><button class="btn">Call <i class="ri-phone-fill"></i>
+            </button></a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="intro" id="introvideo">
+      <div class="section__container intro__container">
+        <div class="intro__cotent">
+          
+          <h2 class="section__header">Expore Our Banquet</h2>
+          <p class="section__description">
+            Whether you're planning a grand celebration or an intimate gathering, our banquet hall offers the perfect setting where elegance meets sophistication. From breathtaking decor to impeccable service, every detail is crafted to transform your special occasion into an unforgettable experience. Step into a world of refined charm and seamless luxury, where memorable moments await your arrival.
+          </p>
+          <a href="https://wa.me/8288077631"><button class="btn">Book Now <i class="ri-whatsapp-fill"></i>
+          </button></a>
+          <a href="tel:+918288077631"><button class="btn">Call <i class="ri-phone-fill"></i>
+          </button></a>
+        </div>
+        <div class="intro__video">
+          <video src="assets/FINAL.mov.mp4" autoplay muted loop></video>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo nav__logo">
+            <img src="assets/hotellogo.png" alt="Hotel Logo" class="hotel-logo">
+            <span class="hotel-name">THE AMBIENCE HOTEL</span>
+          </div>
+          <p class="section__description">
+            The Ambience Hotel aims to provide a relaxing, stylish atmosphere with exceptional service. Our goal is to create a welcoming space where comfort, luxury, and memorable experiences blend seamlessly for every guest.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="www.youtube.com/@TheAmbienceHotel"><i class="ri-youtube-fill"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/theambiencehotel/"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/share/15oMXjFAjw/?mibextid=wwXIfr"><i class="ri-facebook-box-line"></i></a>
+            </li>
+            <li>
+              <a href="https://www.google.com/search?q=the+ambience+hotel&rlz=1C1ONGR_enIN1066IN1066&oq=the+ambience+hotel&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhMIARAuGK8BGMcBGIAEGJgFGJkFMgYIAhAjGCcyBwgDEAAYgAQyDQgEEC4YrwEYxwEYgAQyBwgFEAAYgAQyBwgGEAAYgAQyFggHEC4YrwEYxwEYgAQYmAUYmQUYngUyDQgIEAAYhgMYgAQYigUyDQgJEAAYhgMYgAQYigXSAQk2NDgwajBqMTWoAgiwAgHxBYYyBywUAEWs&sourceid=chrome&ie=UTF-8"><i class="ri-google-line"></i></a>
+            </li>
+            <li>
+              <a href="https://www.google.com/maps/place/The+Ambience+Hotel/@30.6671309,76.7958927,13.98z/data=!4m9!3m8!1s0x390feb0063620adf:0x34bf118209d9d1e!5m2!4m1!1i2!8m2!3d30.6602398!4d76.818815!16s%2Fg%2F11ww8951rj?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+                <i class="ri-map-pin-line"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <div class="footer__links">
+            <li><a href="index.html#about">Online Booking</a></li>
+            <li><a href="index.html#room">Room Customization</a></li>
+            <li><a href="index.html#introvideo">Virtual Tours</a></li>
+            <li><a href="index.html#feature">Features</a></li>
+            <li><a href="index.html#menu">Food</a></li>
+            <li><a href="index.html#news">Reviews</a></li>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <div class="footer__links">
+            <li>
+              <span><i class="ri-phone-fill"></i></span>
+              <div>
+                <h5>Phone Number</h5>
+                <p>+91 8288077631</p>
+              </div>
+            </li>
+            <li>
+              <span><i class="ri-record-mail-line"></i></span>
+              <div>
+                <h5>Email</h5>
+                <p>theambiencehotel98@gmail.com</p>
+              </div>
+            </li>
+            <li>
+              <span><i class="ri-map-pin-2-fill"></i></span>
+              <div>
+                <a href="https://www.google.com/maps/place/The+Ambience+Hotel/@30.6671309,76.7958927,13.98z/data=!4m9!3m8!1s0x390feb0063620adf:0x34bf118209d9d1e!5m2!4m1!1i2!8m2!3d30.6602398!4d76.818815!16s%2Fg%2F11ww8951rj?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+                  <h5>Location</h5>
+                </a>
+                <p>Near Unicity Homes, Zirakpur, Chandigarh, Punjab 140603</p>
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 The Ambience Hotel. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    <script>
+      const banquetImages = [
+        'assets/banqnine.jpg',
+        'assets/banqfour.jpg',
+        'assets/banqsix.jpg',
+        'assets/banqtwo.jpg',
+        'assets/banket.jpg'
+      ];
+      let currentImageIndex = 0;
+
+      function changeImage(direction) {
+        currentImageIndex += direction;
+        if (currentImageIndex < 0) {
+          currentImageIndex = banquetImages.length - 1;
+        } else if (currentImageIndex >= banquetImages.length) {
+          currentImageIndex = 0;
+        }
+        document.getElementById('banquetImage').src = banquetImages[currentImageIndex];
+      }
+    </script>
+  </body>
+</html>

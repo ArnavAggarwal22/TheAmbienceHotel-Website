@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="assets/hotellogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+
+
+
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "y5Q9Jl7o6AobzoP59",
+        });
+    })();
+</script>
+
+
+
+
+    
+
+    <title>The Ambience Hotel</title>
+    
+
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <div class="nav__header">
+          <div class="logo nav__logo">
+            <a href="#home">
+            <img src="assets/hotellogo.png" alt="Hotel Logo" class="hotel-logo">
+          </a>
+          
+            <span class="hotel-name">THE AMBIENCE HOTEL</span>
+          
+          </div>
+          <button class="nav__menu__btn" id="menu-btn" aria-label="Toggle Menu">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#room">Room</a></li>
+          <li><a href="#feature">Features</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#news">Reviews</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- CSS to Adjust Logo Size -->
+    <style>
+      .nav__logo {
+        display: flex;
+        align-items: center; /* Aligns logo and text */
+        gap: 10px; /* Space between logo and text */
+      }
+    
+      .hotel-logo {
+        width: 55px; /* Adjust width of logo */
+        height: auto; /* Maintain aspect ratio */
+      }
+    
+      .hotel-name {
+        font-size: 20px; /* Adjust text size */
+        font-weight: bold;
+      }
+    </style>
+    
+
+    <header class="header" id="home">
+      <div class="section__container header__container">
+        <p class="section__subheader"></p>
+        <h1>The Perfect<br />Destination For You</h1>
+        <a href="https://wa.me/8288077631"><button class="btn">Book Now <i class="ri-whatsapp-fill"></i>
+        </button></a>
+        <a href="tel:+918288077631"><button class="btn">Call <i class="ri-phone-fill"></i>
+        </button></a>
+      </div>
+    </header>
+
+    <section class="booking">
+      <div class="section__container booking__container">
+        <form action="/">
+          <div class="input__group">
+            <label for="arrival">Arrival Date</label>
+            <input type="date" id="arrival" name="arrival">
+        </div>
+        <div class="input__group">
+            <label for="departure">Departure Date</label>
+            <input type="date" id="departure" name="departure">
+        </div>
+        
+        <div class="input__group">
+          <label for="guests">Rooms</label>
+          <input type="number" id="guests" name="guests" placeholder="No Of Rooms" min="1" step="1">
+      </div>
+      
+          <button id="demo" class="btn" onclick="change_text()">Check Availability</button>
+          
+          <script type="text/javascript">
+            function change_text() {
+                document.getElementById("demo").innerHTML = "Room(s) are available";
+                document.getElementById('demo').style.backgroundColor = "green";
+
+            }
+            </script>
+            
+          
+          
+        
+        </form>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section__container about__container">
+        <div class="about__grid">
+          <div class="about__image">
+            <img src="assets/hotelphotoone.jpg" alt="about" />
+          </div>
+          <div class="about__card">
+            <span><i class="ri-user-line"></i></span>
+            <h4>Strong Team</h4>
+            <p>
+              Unlocking Hospitality Excellence And Ensures Your Perfect Stay
+            </p>
+          </div>
+          <div class="about__image">
+            <img src="assets/hotelphotofive.jpg" alt="about" />
+          </div>
+          <div class="about__card">
+            <span><i class="ri-calendar-check-line"></i></span>
+            <h4>Luxury Room</h4>
+            <p>Experience Unrivaled Luxury at Our Exquisite Luxury Rooms</p>
+          </div>
+        </div>
+        <div class="about__content">
+          <p class="section__subheader"></p>
+          <h2 class="section__header">Discover Our Underground</h2>
+          <p class="section__description">
+            Welcome to a hidden realm of extraordinary accommodations where
+            luxury, comfort, and adventure converge. Our underground hotels
+            offer an unparalleled escape from the ordinary, inviting you to
+            explore a subterranean world of wonders.
+          </p>
+          <a href="https://wa.me/8288077631"><button class="btn">Book Now <i class="ri-whatsapp-fill"></i>
+          </button></a>
+          <a href="tel:+918288077631"><button class="btn">Call <i class="ri-phone-fill"></i>
+          </button></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="room__container" id="room">
+      <p class="section__subheader">Rooms</p>
+      <h2 class="section__header">Hand Picked Services</h2>
+      <div class="room__grid">
+        <div class="room__card">
+          <img src="assets/hotelphotoeleven.jpg" alt="room" class="room__image" />
+          <div class="room__card__details">
+            <h4>Super Deluxe Room</h4>
+            
+            <h3><a href="https://wa.me/8288077631"><button class="btn">1899 Rs<span>/night</span>
+            </button></a></h3>
+            <h3>
+              <a href="superrooms.html"></button><button class="btn">View Details</button></a>
+            </h3>
+          </div>
+        </div>
+      
+        <div class="room__card">
+          <img src="assets/hotelphotofour.jpg" alt="room" class="room__image" />
+          <div class="room__card__details">
+            <h4>Deluxe Room</h4>
+            
+            <h3><a href="https://wa.me/8288077631"><button class="btn">1499 Rs<span>/night</span></button>
+            </a></h3>
+            <h3>
+            <a href="rooms.html"></button><button class="btn">View Details</button></a>
+          </h3>
+          </div>
+        </div>
+      
+        <div class="room__card">
+          <img src="assets/hotelphototwo.jpg" alt="room" class="room__image" />
+          <div class="room__card__details">
+            <h4>Luxury Banquet</h4>
+            
+            <h3><a href="https://wa.me/8288077631"><button class="btn">Book Now
+            </button></a>
+            </h3>
+            <h3>
+              <a href="banquett.html"><button class="btn">View Details</button></a>
+            </h3>
+          </div>
+        </div>
+      </div>
+      
+      
+      <style>
+        .room__grid {
+          display: grid;
+          gap: 20px;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+      
+        .room__card {
+          border-radius: 10px;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+          overflow: hidden;
+          background: #fff;
+          text-align: center;
+        }
+      
+        .room__image {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+          display: block;
+        }
+      
+        .room__card__details {
+          padding: 15px;
+          background: #f8f8f8;
+        }
+      
+        .room__card__details h4 {
+          margin: 0;
+          font-size: 20px;
+          color: #333;
+        }
+      
+        .room__card__details p {
+          font-size: 14px;
+          color: #666;
+          margin: 5px 0;
+        }
+      
+        .room__card__details h3 {
+          font-size: 18px;
+          color: #121010;
+          font-weight: bold;
+          margin-top: 10px;
+        }
+      
+        .room__card__details span {
+          font-size: 14px;
+          opacity: 0.8;
+        }
+      </style>
+      
+      
+    </section>
+
+    <section class="intro" id="introvideo">
+      <div class="section__container intro__container">
+        <div class="intro__cotent">
+          
+          <h2 class="section__header">Meet With Our Luxury Place</h2>
+          <p class="section__description">
+            Whether you're seeking a cozy and exclusive hideaway or an immersive
+            journey beneath the surface, Hotel Miranda promises to be an
+            unforgettable stay, where the depths of comfort and excitement await
+            your arrival.
+          </p>
+          <a href="https://wa.me/8288077631"><button class="btn">Book Now <i class="ri-whatsapp-fill"></i>
+          </button></a>
+          <a href="tel:+918288077631"><button class="btn">Call <i class="ri-phone-fill"></i>
+          </button></a>
+        </div>
+        <div class="intro__video">
+          <video src="assets/videohotel.mp4" autoplay muted loop></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container feature__container" id="feature">
+      <p class="section__subheader">FACILITIES</p>
+      <h2 class="section__header">Core Features</h2>
+      <div class="feature__grid">
+        <div class="feature__card">
+          <span><i class="ri-thumb-up-line"></i></span>
+          <h4>Have High Rating</h4>
+          <p>
+            We take pride in curating a selection of hotels that consistently
+            receive high ratings and positive reviews.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-time-line"></i></span>
+          <h4>Quite Hours</h4>
+          <p>
+            We understand that peace and uninterrupted rest are essential for a
+            rejuvenating experience.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-map-pin-line"></i></span>
+          <h4>Best Location</h4>
+          <p>
+            At our hotel booking website, we take pride in offering
+            accommodations in the most prime and sought-after locations.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-close-circle-line"></i></span>
+          <h4>Free Cancellation</h4>
+          <p>
+            We understand that travel plans can change unexpectedly, which is
+            why we offer the flexibility of free cancellation.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-wallet-line"></i></span>
+          <h4>Payment Options</h4>
+          <p>
+            Our hotel booking website offers a range of convenient payment
+            options to suit your preferences.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-coupon-line"></i></span>
+          <h4>Special Offers</h4>
+          <p>
+            Whether you're planning a romantic getaway, or a business trip, our
+            carefully curated special offers cater to all your needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="section__container menu__container">
+        <div class="menu__header">
+          <div>
+            <p class="section__subheader">MENU</p>
+            <h2 class="section__header">Our Food Menu</h2>
+          </div>
+          <div class="section__nav">
+            
+          </div>
+        </div>
+        <ul class="menu__items">
+          <li>
+            <img src="assets/sandwhich.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Appetizers</h4>
+              <p>
+                It's a creative twist on a classic breakfast favorite, bringing new flavors and excitement to your plate!
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="assets/beverage.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Beverages</h4>
+              <p>
+                A classic choice for your daily dose of comfort and calmness.
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="assets/paneertikka.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Snacks</h4>
+              <p>
+                Our Chia Oatmeal is a wholesome nutrient-packed breakfast
+                delight.
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="assets/dalmakhni.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Main Course</h4>
+              <p>
+                From crisp, refreshing salads to hearty mains like juicy burgers, grilled meats, and comforting pastas, there’s something for everyone to enjoy! 
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="assets/gulabjamun.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Desserts</h4>
+              <p>
+                Our Marmalade Selection is a delicious mix of handmade citrus spreads, bursting with fresh and tangy flavors.
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="assets/salad.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Salads</h4>
+              <p>
+                A colorful mix of fresh greens, juicy tomatoes, cucumbers, carrots, and bell peppers, served with your choice of dressing. Light, refreshing, and full of flavor!
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="menu__images">
+          <img src="assets/banket.jpg" alt="menu" />
+          <img src="assets/hotelphotonine.jpg" alt="menu" />
+          <img src="assets/hotelphotoseven.jpg" alt="menu" />
+        </div>
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+      </div>
+    </section>
+
+    <section class="section__container news__container" id="news">
+      <div class="news__header">
+        <div>
+          
+          <h2 class="section__header">Reviews</h2>
+        </div>
+        <div class="section__nav">
+          
+        </div>
+      </div>
+      <div class="news__grid">
+        <div class="news__card">
+          
+          <div class="news__card__title">
+            <p>25th January 2025</p>
+            <p>By Shreya Kapoor</p>
+            
+          </div>
+          <h4>A Perfect Stay with Unmatched Hospitality!</h4>
+          <p>
+            True to its name the place has a beautiful ambience . The food was delicious and the stay was very comfortable .The hospitality of the staff was very impressive. In total it was complete relaxing and joyful experience.
+          </p>
+        </div>
+        <div class="news__card">
+          
+          <div class="news__card__title">
+            <p>1st February 2025</p>
+            <p>By Ankush Mittal</p>
+          </div>
+          <h4>An Exquisite Retreat with Exceptional Hospitality</h4>
+          <p>
+            The Ambience Hotel went above and beyond! Everything about our stay was flawless, from the friendly greeting at check-in to the spotless accommodation and first-rate service. Our experience was genuinely unforgettable
+            
+          </p>
+        </div>
+        <div class="news__card">
+          
+          <div class="news__card__title">
+            <p>8th February 2025</p>
+            <p>By Shubham Khurana</p>
+          </div>
+          <h4>A Serene Escape with Delightful Hospitality</h4>
+          <p>
+            The rooms are thoughtfully designed, complemented by professional hospitality and courteous staff. A lavish breakfast is served with a warm smile. Additionally, the location is a major advantage.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section id="contact" class="contact">
+      <h2>Add Your Reviews</h2>
+      <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Your Name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Your Email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" placeholder="Your Message" required></textarea>
+
+          
+          <button  onclick="SendMail()">Send</button>
+          
+      
+      </form>
+  </section>
+
+
+
+
+
+
+
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo nav__logo">
+            <img src="assets/hotellogo.png" alt="Hotel Logo" class="hotel-logo">
+            <span class="hotel-name">THE AMBIENCE HOTEL</span>
+          </div>
+          <p class="section__description">
+            The Ambience Hotel aims to provide a relaxing, stylish atmosphere with exceptional service. Our goal is to create a welcoming space where comfort, luxury, and memorable experiences blend seamlessly for every guest.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="www.youtube.com/@TheAmbienceHotel"><i class="ri-youtube-fill"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/theambiencehotel/"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/share/15oMXjFAjw/?mibextid=wwXIfr"><i class="ri-facebook-box-line"></i></a>
+            </li>
+            <li>
+              <a href="https://www.google.com/search?q=the+ambience+hotel&rlz=1C1ONGR_enIN1066IN1066&oq=the+ambience+hotel&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhMIARAuGK8BGMcBGIAEGJgFGJkFMgYIAhAjGCcyBwgDEAAYgAQyDQgEEC4YrwEYxwEYgAQyBwgFEAAYgAQyBwgGEAAYgAQyFggHEC4YrwEYxwEYgAQYmAUYmQUYngUyDQgIEAAYhgMYgAQYigUyDQgJEAAYhgMYgAQYigXSAQk2NDgwajBqMTWoAgiwAgHxBYYyBywUAEWs&sourceid=chrome&ie=UTF-8"><i class="ri-google-line"></i></a>
+            </li>
+            
+            <li>
+              <a href="https://www.google.com/maps/place/The+Ambience+Hotel/@30.6671309,76.7958927,13.98z/data=!4m9!3m8!1s0x390feb0063620adf:0x34bf118209d9d1e!5m2!4m1!1i2!8m2!3d30.6602398!4d76.818815!16s%2Fg%2F11ww8951rj?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+                <i class="ri-map-pin-line"></i>
+              </a>
+              
+            </li>
+            
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <div class="footer__links">
+            <li><a href="#about">Online Booking</a></li>
+            <li><a href="#room">Room Customization</a></li>
+            <li><a href="#introvideo">Virtual Tours</a></li>
+            <li><a href="#feature">Features</a></li>
+            <li><a href="#menu">Food</a></li>
+            <li><a href="#news">Reviews</a></li>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <div class="footer__links">
+            <li>
+              <span><i class="ri-phone-fill"></i></span>
+              <div>
+                <h5>Phone Number</h5>
+                <p>+91 8288077631</p>
+              </div>
+            </li>
+            <li>
+            
+              <span><i class="ri-record-mail-line"></i></span>
+              <div>
+                <h5>Email</h5>
+                <p>theambiencehotel98@gmail.com</p>
+              </div>
+            </li>
+            <li>
+              
+              <span>
+                
+              <i class="ri-map-pin-2-fill"></i>
+            
+              </span>
+              <div>
+                <a href="https://www.google.com/maps/place/The+Ambience+Hotel/@30.6671309,76.7958927,13.98z/data=!4m9!3m8!1s0x390feb0063620adf:0x34bf118209d9d1e!5m2!4m1!1i2!8m2!3d30.6602398!4d76.818815!16s%2Fg%2F11ww8951rj?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D" target="_blank">
+                <h5>Location</h5>
+              </a>
+                <p>Near Unicity Homes, Zirakpur, Chandigarh, Punjab 140603</p>
+              </div>
+            
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2025 The Ambience Hotel. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+
+
+
+    <script>
+      let popup = document.getElementById("popup");
+      
+      function openPopup() {
+          popup.classList.add("open-popup");
+      }
+      
+      function closePopup() {
+          popup.classList.add("open-popup");
+      }
+      </script>
+      
+
+
+
+  </body>
+</html>
